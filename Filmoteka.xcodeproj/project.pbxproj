@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FCF4E691F6245B46CA0C593 /* Pods_Filmoteka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B874D6EAE7CDBF6DFB9E63 /* Pods_Filmoteka.framework */; };
 		A5583D6E26D3C070006E4818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5583D6D26D3C070006E4818 /* AppDelegate.swift */; };
 		A5583D7026D3C070006E4818 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5583D6F26D3C070006E4818 /* SceneDelegate.swift */; };
 		A5583D7226D3C070006E4818 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5583D7126D3C070006E4818 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A59FF8F2375F70030CDA5FC /* Pods-Filmoteka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Filmoteka.debug.xcconfig"; path = "Target Support Files/Pods-Filmoteka/Pods-Filmoteka.debug.xcconfig"; sourceTree = "<group>"; };
 		A5583D6A26D3C070006E4818 /* Filmoteka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filmoteka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5583D6D26D3C070006E4818 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5583D6F26D3C070006E4818 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		A5583D7626D3C071006E4818 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5583D7926D3C071006E4818 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5583D7B26D3C071006E4818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6B874D6EAE7CDBF6DFB9E63 /* Pods_Filmoteka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Filmoteka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B22B3B7B90B45F9AEBDB529D /* Pods-Filmoteka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Filmoteka.release.xcconfig"; path = "Target Support Files/Pods-Filmoteka/Pods-Filmoteka.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FCF4E691F6245B46CA0C593 /* Pods_Filmoteka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85AF7CA0E6249C92ECC9AB4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6B874D6EAE7CDBF6DFB9E63 /* Pods_Filmoteka.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5583D6126D3C06F006E4818 = {
 			isa = PBXGroup;
 			children = (
 				A5583D6C26D3C070006E4818 /* Filmoteka */,
 				A5583D6B26D3C070006E4818 /* Products */,
+				CBD1CA8A13753F7C0C9D8B72 /* Pods */,
+				85AF7CA0E6249C92ECC9AB4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = Filmoteka;
 			sourceTree = "<group>";
 		};
+		CBD1CA8A13753F7C0C9D8B72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A59FF8F2375F70030CDA5FC /* Pods-Filmoteka.debug.xcconfig */,
+				B22B3B7B90B45F9AEBDB529D /* Pods-Filmoteka.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5583D7E26D3C071006E4818 /* Build configuration list for PBXNativeTarget "Filmoteka" */;
 			buildPhases = (
+				EF804B1E6C047E34CF5D5381 /* [CP] Check Pods Manifest.lock */,
 				A5583D6626D3C070006E4818 /* Sources */,
 				A5583D6726D3C070006E4818 /* Frameworks */,
 				A5583D6826D3C070006E4818 /* Resources */,
+				F09F7B72DE1E133A1E3B82E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EF804B1E6C047E34CF5D5381 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Filmoteka-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F09F7B72DE1E133A1E3B82E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Filmoteka/Pods-Filmoteka-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Filmoteka/Pods-Filmoteka-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Filmoteka/Pods-Filmoteka-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A5583D6626D3C070006E4818 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		A5583D7F26D3C071006E4818 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A59FF8F2375F70030CDA5FC /* Pods-Filmoteka.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		A5583D8026D3C071006E4818 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B22B3B7B90B45F9AEBDB529D /* Pods-Filmoteka.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
